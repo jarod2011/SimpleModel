@@ -1,0 +1,27 @@
+{
+    "name": "jarod2011/SimpleModel",
+    "license": "MIT",
+    "description": "Simple Model Base On Medoo",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jarod2011",
+            "email": "xinghen249@gmail.com",
+            "role": "developer"
+        }
+    ],
+    "version": "0.1.0-dev",
+    "support": {
+        "email": "xinghen249@gmail.com",
+        "source": "https://github.com/jarod2011/SimpleModel"
+    },
+    "require": {
+        "catfan/Medoo": "*",
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SimpleModel\\": "src/SimpleModel"
+        }
+    }
+}
