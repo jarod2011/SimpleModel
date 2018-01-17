@@ -2,6 +2,7 @@
 namespace SimpleModel;
 
 use Medoo\Medoo;
+use SimpleModel\Registry;
 
 class SimpleModel implements \ArrayAccess
 {
@@ -59,6 +60,9 @@ class SimpleModel implements \ArrayAccess
     }
     public static function getOrm($onlyRead = false)
     {
-        
+        if ($onlyRead && Registry::exists("orm_read")) {
+            return Registry::get("orm_read");
+        }
+        return Registry::get("orm");
     }
 }
